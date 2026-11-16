@@ -4,6 +4,7 @@ from calculadora import somar
 from calculadora import subtrair
 from calculadora import multiplicar
 from calculadora import dividir
+from calculadora import potencia
 
 def test_somar():
     assert somar(10, 5) == 15
@@ -20,3 +21,6 @@ def test_dividir():
 def test_divisao_por_zero():
     with pytest.raises(ValueError):
         dividir(10, 0)
+
+def test_potencia():
+    assert potencia(2, 3) == 8
